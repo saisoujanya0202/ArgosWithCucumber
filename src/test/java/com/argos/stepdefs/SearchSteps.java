@@ -1,6 +1,6 @@
-package stepDefinitions;
+package com.argos.stepdefs;
 
-import commonLibraries.CommonFunctions;
+import com.argos.commonLibraries.CommonFunctions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,9 +12,7 @@ import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
-import static java.lang.String.format;
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.everyItem;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -22,8 +20,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class SearchSteps extends CommonFunctions {
 
 
-    @Given("I am on home page {string}")
-    public void iAmOnHomePage(String url ) {
+    @Given("I am on page {string}")
+    public void iAmOnPage(String url ) {
         driver.get(url);
         driver.manage().timeouts().implicitlyWait(Duration.of(10, ChronoUnit.SECONDS));
         driver.findElement(By.id("consent_prompt_submit")).click();
@@ -50,7 +48,7 @@ public class SearchSteps extends CommonFunctions {
         List<String> linkTextList = new ArrayList<>();
         for(WebElement e: links){
            // e.findElement(e.get);
-            System.out.println(e.getText());
+           // System.out.println(e.getText());
             linkTextList.add(e.getText().toLowerCase());
         }
         //List<String> resultTextList =  links.stream().map(webelement->webelement.getText().toLowerCase()).collect(Collectors.toList());

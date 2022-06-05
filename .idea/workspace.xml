@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86cb5852-09ae-4edd-bd83-019b8c1991d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/commonLibraries/CommonFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/stepDefinitions/SearchSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/features/search.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Run.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StartArgos.java" afterDir="false" />
+    <list default="true" id="86cb5852-09ae-4edd-bd83-019b8c1991d0" name="Changes" comment="cucumber search word working">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testData/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/argos/commonLibraries/CommonFunctions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/argos/stepdefs/LoginSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/argos/stepdefs/RegisterSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/login.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/register.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commonLibraries/CommonFunctions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stepDefinitions/SearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/argos/stepdefs/SearchSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/features/search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/argos/RunCucumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StartArgos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/argos/StartArgos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +48,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/saiso/IdeaProjects/ArgosWithCucumber/src/test/java/com/argos/stepdefs",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.Run">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\saiso\IdeaProjects\ArgosWithCucumber\src\test\java\com\argos\stepdefs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\saiso\IdeaProjects\ArgosWithCucumber\src\test\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.RunCucumberTest">
     <configuration name="CollectionsDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="collections.CollectionsDemo" />
       <module name="ArgosWithCucumber" />
@@ -63,18 +74,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RunArgosCucumberTest" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <option name="FILE_PATH" value="C:\Users\saiso\IdeaProjects\ArgosWithCucumber\src\test\resources\features" />
+      <option name="GLUE" value="com.argos.stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ArgosWithCucumber" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Run" />
+      <shortenClasspath name="NONE" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunCucumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArgosWithCucumber" />
+      <option name="PACKAGE_NAME" value="com.argos" />
+      <option name="MAIN_CLASS_NAME" value="com.argos.RunCucumberTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.CollectionsDemo" />
+      <item itemvalue="Cucumber Java.RunArgosCucumberTest" />
+      <item itemvalue="JUnit.RunCucumberTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Run" />
+        <item itemvalue="JUnit.RunCucumberTest" />
         <item itemvalue="Application.CollectionsDemo" />
       </list>
     </recent_temporary>
@@ -88,6 +116,21 @@
       <option name="presentableId" value="Default" />
       <updated>1653991999650</updated>
     </task>
+    <task id="LOCAL-00001" summary="cucumber search word working">
+      <created>1654273312750</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654273312750</updated>
+    </task>
+    <task id="LOCAL-00002" summary="cucumber search word working">
+      <created>1654273473163</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654273473163</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,6 +143,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cucumber search word working" />
+    <option name="LAST_COMMIT_MESSAGE" value="cucumber search word working" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

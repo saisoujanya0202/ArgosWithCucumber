@@ -1,4 +1,6 @@
-import commonLibraries.CommonFunctions;
+package com.argos;
+
+import com.argos.commonLibraries.CommonFunctions;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
@@ -17,7 +19,7 @@ public class StartArgos {
     @After
     public void afterTest(){
 
-commonFunctions.closeBrowser();
+    commonFunctions.closeBrowser();
 
     }
 
